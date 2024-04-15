@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em que país você mora?</title>
+</head>
+<body>
+    <!--Fazer em forma de site o ex009--> 
+    <h1>Em que país você mora?</h1>
+    País <input type="text" name="txtpais" id="txtpais">  
+    <input type="button" value="Enviar" onclick="pais()">
+    <div id="resultado"></div>
+
+    <script>
+        function pais() {
+            var txtpais = window.document.getElementById('txtpais')  
+            var resultado = window.document.getElementById('resultado')
+            var pais = txtpais.value
+            resultado.innerHTML = `<br>Seu país é o ${pais}.`
+            if (pais == 'Brasil') {
+                resultado.innerHTML += '<p>Você é brasileiro.</p>'
+            } else {
+                resultado.innerHTML += '<p>Você é estrangeiro.</p>'
+            }
+        }
+    </script>
+</body>
+</html>
+
