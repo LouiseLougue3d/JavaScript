@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="main">
+        <form action="" name="calculator">
+            <input type="text" class="txt main" name="txt1" disabled>
+            <input type="text" class="txt1main" name="txt12" value="C" onclick="location.reload()"> <br>
+
+            <input type="button" class="num main" name="bu9" value="9" onclick="displayNum(bu9.value)">
+            <input type="button" class="num main" name="bu8" value="8" onclick="displayNum(bu8.value)">
+            <input type="button" class="num main" name="bu7" value="7" onclick="displayNum(bu7.value)">
+            <input type="button" class="num addmain" name="addbu" value="+" onclick="displayNum(addbu.value)"> <br>
+
+            <input type="button" class="num main" name="bu6" value="6" onclick="displayNum(bu6.value)">
+            <input type="button" class="num main" name="bu5" value="5" onclick="displayNum(bu5.value)">
+            <input type="button" class="num main" name="bu4" value="4" onclick="displayNum(bu4.value)">
+            <input type="button" class="num submain" name="subbu" value="-" onclick="displayNum(subbu.value)"> <br>
+
+            <input type="button" class="num main" name="bu3" value="3" onclick="displayNum(bu3.value)">
+            <input type="button" class="num main" name="bu2" value="2" onclick="displayNum(bu2.value)">
+            <input type="button" class="num main" name="bu1" value="1" onclick="displayNum(bu1.value)">
+            <input type="button" class="num multmain" name="multbu" value="*" onclick="displayNum(multbu.value)"> <br>
+
+            <input type="button" class="num main" name="budot" value="." onclick="displayNum(budot.value)">
+            <input type="button" class="num main" name="bu0" value="0" onclick="displayNum(bu0.value)">
+            <input type="button" class="num equalain" name="equalbu" value="=" onclick="txt1.value=eval(txt1.value)">
+            <input type="button" class="num divmain" name="divbu" value="/" onclick="displayNum(divbu.value)"> <br>
+        </form>
+    </div>
+</body>
+<script src="calculadora.js"></script>
+</html>
